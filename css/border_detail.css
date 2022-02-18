@@ -1,0 +1,245 @@
+
+
+.detail-info .title{
+    font-size: 24px;
+}
+.detail-info  .price{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 30px;
+    padding: 10px 0;
+}
+.detail-info .delivery{
+    font-size: 12px;
+    color: #999;
+}
+   
+.detail-control .price,
+.detail-control .order{
+   overflow: hidden;
+   
+}
+.detail-control{margin-top: 150px;}
+ .detail-control .left{
+    float: left;
+}
+ .detail-control .right{
+    float: right;
+}
+.order button{
+    width: 50%;
+   box-sizing: border-box;
+    padding: 15px 10px;
+}
+.price > p{
+    height: 35px;
+    line-height: 35px;
+    margin: 0;
+}
+
+.price > strong{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reply-wrap {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ddd;
+    position: relative;
+
+}
+.reply-wrap .reply-image {
+    position: absolute; 
+    left: 15px;
+    top: 15px;
+}
+.reply-wrap .reply-content {
+    padding-left:60px;
+}
+/*부트스트랩의 form-control 조정 */
+.reply-content > .form-control {
+    resize: vertical;/*세로로만 조정가능*/
+    width: 100%; /*최대 100%*/
+    min-height: 80px; /*최대 넓이*/
+    margin-bottom: 10px;
+}
+.reply-input > .form-control {
+    width: 200px;
+    margin-bottom: 5px;
+}
+.reply-group {
+    overflow: hidden;
+}
+.reply-input {
+    float: left;
+}
+.reply-group .right {
+    float: right;
+}
+/*댓글 영역*/
+.reply-group small {
+    margin-left: 10px;
+    height: 20px;
+    line-height: 20px;
+}
+.reply-group small, 
+.reply-group strong {
+    float : left;
+}   
+.reply-group a {
+    text-decoration: none;
+    color: #777;
+    float: right;
+}      
+
+/*서서히 보이기 */
+.reply-content textarea {
+    height: 50px;
+    transition: height .4s ease-in-out;
+    
+}
+.reply-content textarea:focus {
+    height: 150px;
+
+}
+
+
+.input-group-addon {
+    padding: 0;
+    border: none; /*윤곽 모두 0*/
+    border-radius: 0;
+}
+/*폼컨트롤, 인풋그룹 내부에 모든 버튼 라디우스 0 */
+.form-control, .form-group .btn {
+    border-radius: 0;
+}
+/*포커스시 윤곽 색 변경*/
+.form-control:focus {
+    border-color: #555;
+}
+
+
+
+
+/*=======댓글========*/
+.reply-wrap {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ddd;
+    position: relative; /*부모에 relative*/
+}
+
+.reply-wrap .reply-image {
+    position: absolute; /*자식에서 absolute로 부모요소 위치로 조정*/
+    left: 15px;
+    top: 15px;
+}
+.reply-wrap .reply-content {
+    padding-left:60px;
+}
+/*부트스트랩의 form-control 조정 */
+.reply-content > .form-control {
+    resize: vertical;/*세로로만 조정가능*/
+    width: 100%; /*최대 100%*/
+    min-height: 80px; /*최대 넓이*/
+    margin-bottom: 10px;
+}
+.reply-input > .form-control {
+    width: 200px;
+    margin-bottom: 5px;
+}
+.reply-group {
+    overflow: hidden;
+}
+   
+.reply-input {
+    float: left;
+}
+.reply-group .right {
+    float: right;
+}
+
+
+/*댓글 영역*/
+.reply-group small {
+    margin-left: 10px;
+    height: 20px;
+    line-height: 20px;
+}
+.reply-group small, 
+.reply-group strong {
+    float : left;
+}   
+.reply-group  a {
+    text-decoration: none;
+    color: #777;
+    float: right;
+}
+
+/* ========페이스북 그리드========== */
+.section-facebook {
+border-right: 1px solid #cccccc;
+border-left: 1px solid #cccccc;
+}
+
+
+.title-inner {position: relative;} /* 부모영역 */
+.title-inner .profile {
+position: absolute;
+left:0;
+top:0;
+}
+.title-inner .title {
+padding-left: 60px;
+}
+
+.content-inner {
+padding: 10px 0; /* 위아래 10, 좌우 0 */
+}
+
+.like-inner, 
+.button-inner {/* 상자 위 윤곽 */
+border-top: 1px solid #cccccc;
+}
+.like-inner {
+margin-top: 10px;
+}
+.like-inner a {
+text-decoration: none;
+color: black;
+}
+.like-inner span {
+vertical-align: middle;
+}
+.button-inner { /* 버튼 영역 */
+overflow: hidden;
+}
+.button-inner a {
+float: left;
+width: 33.3333%;
+text-align: center;
+color: black;
+padding: 10px 0;
+}
+.button-inner i {
+margin: 0 5px; /* 위아래0 좌우5 */
+}
+/* 좌측 메뉴 xs에서 안보이도록 */
+@media (max-width:767px) {
+.aside-facebook {
+display: none;
+}
+}

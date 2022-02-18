@@ -1,0 +1,36 @@
+.goods-content{
+    overflow: hidden;
+    padding: 15px 0 15px 0;/* 12시에서 시계방향 */
+
+}
+.goods-content .goods-info{
+    float: left;
+}
+.goods-content .goods-price{
+    float: right;
+}
+.goods-content .goods-info > span{
+    display: block;
+    font-size: 15px;
+}
+
+.good-color{
+    transition: all 0.5s ease-in-out 0s;
+    margin-top: -10px;
+    opacity: 0;
+}
+.goods-list:hover .good-color {
+    opacity: 1;
+   
+    
+}
+.good-color ul{
+    overflow: hidden;
+  
+}
+.good-color ul li{
+    float: left;
+}
+.butt{
+    text-align: center;
+}

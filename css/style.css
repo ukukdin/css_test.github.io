@@ -1,0 +1,184 @@
+
+.custom-header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+
+
+.custom-header .navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;}
+
+    .custom-header .navbar-inverse{
+        background-color: #282a35;
+    }
+    .custom-header .navbar-inverse.navbar-nav> .active >a {
+        /* .class클래스 하위 a태그 */
+        background-color: #464852;
+        color: whiete
+    }
+   
+    .custom-header .navbar-inverse .navbar-nav > li>a:hover,
+    .comtom_hearder .navbar-inverse .navbar-nav li>a:focus{
+        background-color: #464852;
+    }
+    .custom-header .navbar-inverse.navar-nav>li>a{
+        color: #fff;
+    }
+    .custom-header .navbar-brand{
+        padding: 10px 20px;
+    }
+    /* footer 스타일 */
+footer{background-color: #282a35;
+    margin-top: 50px;
+}
+footer .copyright{
+    color:#fff;
+    padding: 30px 0;
+}
+footer address{
+    margin: 0;
+}
+footer .footer-menu{
+    overflow: hidden;
+    padding: 30px 0;
+}
+footer .copyright-menu{
+    float: right;
+  
+   
+}
+footer .copyright-menu li{
+    
+    display: inline;
+    padding: 0 5px;
+}
+footer .copyright-menu li a{
+    
+    
+    display: inline-block;
+    color: #fff;
+}
+.slide-list{
+    padding: 0;
+}
+.carousel-control.left
+.carousel-control.right{
+background-color:  linear-gradient(to right, rgb(0, 0, 0)0%,rgb(0, 0, 0)100%)
+}
+
+.prod-list , .prod-link{
+    border: 1px solid #777;
+    display: block;
+    text-align: center;/* 전부다 이미지 글 가운데로 */
+}
+.prod-list, .prod-inner{
+    padding: 5px;
+}
+.prod-link{
+    position: relative;
+}
+.prod-link .arrow{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ccc;
+    color: #fff;
+    position: absolute;/* a상자 기반으로 띄움 */
+    left: 15px;
+    bottom: 15px;
+    opacity: 1;
+
+}
+.prod-link .hover{
+    width: 100px;
+    background-color: #4285f4;
+    opacity: 0;/* 투명도 1로 해도 보임 0이면 안보임 */
+    
+}
+/* a호버시 윤곽 */
+.prod-link:hover{
+    border: 1px solid #4285f4;
+}
+/* a호버시 하위에 .arrow 를 숨김 */
+.prod-link:hover > .arrow{
+    opacity: 0;
+/* a호버시 하위에 .hover 를 나타냄 */
+}
+.prod-link:hover > .hover{
+    opacity: 1;}
+
+.main{
+    border: 1px solid #fff;
+    margin-bottom: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+    
+}
+@media (min-width: 1200px){
+    .bloged> .col-lg-2 {
+        width: 20%;
+    }
+}
+.inner{
+    border: 1px solid rgb(240, 226, 226);
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+.inner .blog-content{
+    padding: 15px 12px;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+}
+.inner .img{text-align: center;}
+
+.blog-info{
+    padding: 15px 12px;
+   
+    overflow: hidden;
+    margin-top: 20px;
+    box-sizing: border-box;
+    
+}
+.blog-info ul {
+    color: #FDCC11;
+    float: left;
+}
+.blog-info .right{
+    float: right;
+}
+.inner:hover > .blog-hover{
+    opacity: 1;
+}
+.inner  .blog-hover{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+padding: 15px;
+background-color: rgba(0,0,0,.8);
+    opacity: 0;
+}
+.inner .blog-hover a{ 
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+
+
+}
